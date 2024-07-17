@@ -1,0 +1,94 @@
+body {
+    font-size: 12px;
+}
+
+input {
+    height: 40px;
+    width: 40%;
+    border: none;
+    border-radius: 8px;
+    color: var(--font-dark);
+    font-size: 10px;
+    padding: 5px 10px;
+    background: rgba(200, 200, 200);
+    outline: none;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+#dropdown {
+    height: 40px;
+    width: 40%;
+    border: none;
+    border-radius: 8px;
+    color: var(--font-dark);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px 10px;
+    background: var(--lavender);
+    outline: none;
+    text-align: center;
+    padding: 6px 12px;
+    appearance: none;
+    background-position: right 8px center;
+    background-size: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#dropdown:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.card {
+    box-sizing: border-box;
+    max-width: 25%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    padding-bottom: 20px;
+}
+.card-header {
+    font-size: 30px;
+    color: var(--font-dark);
+    text-transform: uppercase;
+}
+
+label {
+    color: var(--font-dark);
+    padding-top: 7px;
+    padding-bottom: 2px;
+}
+
+.btnCompute {
+    height: 40px;
+    width: 40%;
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 10px;
+    padding: 5px 10px;
+    background: var(--purple);
+    outline: none;
+    text-align: center;
+}
+
+.btnCompute:hover {
+    background: var(--light-purple);
+}
+
+.lblDisplay {
+    background: var(--lavender);
+    font-weight: 500;
+    color: var(--font-dark);
+}
+h4 {
+    font-size: 10px;
+}

@@ -1,0 +1,133 @@
+* {
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --white: #ffffff;
+    --snow: #fafafa;
+    --font-dark: #3b3b3b;
+    --purple: #5046e5;
+    --dark-purple: #392fc2;
+}
+
+.body {
+    /* background-image: url('/assets/images/lokeybgblur.jpg'); */
+    /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; */
+    background: rgb(252, 252, 252);
+    background: linear-gradient(
+        150deg,
+        rgba(252, 252, 252, 1) 0%,
+        rgba(248, 243, 255, 1) 72%
+    );
+}
+
+.logo {
+    height: auto;
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.input {
+    height: 40px;
+    width: 82%;
+    border: none;
+    border-radius: 8px;
+    color: var(--font-dark);
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 50px;
+    background: white;
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-input-placeholder {
+    color: lightgray;
+    font-weight: 300;
+}
+
+.submit {
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    height: 40px;
+    outline: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    background-color: var(--purple);
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.03em;
+}
+
+.submit:hover {
+    background-color: var(--dark-purple);
+    color: var(--white);
+}
+
+.login-setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--font-dark);
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.forgot a:hover {
+    color: var(--purple);
+    font-weight: 500;
+}
+
+label a {
+    text-decoration: none;
+    color: var(--font-dark);
+}
+
+.input-field {
+    margin-bottom: 20px; /* Adjust as needed */
+    position: relative;
+}
+
+.input-field .show-password {
+    position: absolute;
+    top: 50%; /* centers vertically */
+    right: 15px; /* adjust as necessary */
+    color: var(--font-dark);
+    cursor: pointer;
+    transform: translateY(-50%); /* centers vertically */
+}
+
+.input-field .icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: var(--font-dark);
+}

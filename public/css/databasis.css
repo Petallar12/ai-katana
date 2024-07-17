@@ -1,0 +1,153 @@
+/* Table Styling */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.table-container {
+    background-color: var(--white);
+    width: 1520px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    text-align: center;
+    border-radius: 8px;
+    border: none !important;
+}
+
+.table th {
+    font-size: 12px;
+    text-align: center;
+    align-content: center;
+    padding: 6px 10px !important;
+    font-weight: 600 !important;
+    background-color: var(--light-purple);
+    color: var(--font-dark);
+    text-transform: uppercase;
+    border: none !important;
+}
+
+.th-head {
+    font-size: 14px !important;
+    border: none;
+    color: var(--white) !important;
+    background-color: var(--purple) !important;
+}
+
+.table td {
+    font-size: 11px !important;
+    text-align: center !important;
+    align-content: center !important;
+    padding: 5px 13px !important;
+    border: none !important;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tfoot {
+    background-color: var(--purple);
+    border: none !important;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+tfoot > td {
+    font-size: 12px !important;
+}
+
+a {
+    color: var(--font-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--purple);
+}
+
+/* GROUP TABLE CSS */
+
+.group-table {
+    font-size: 11px;
+}
+
+#groupSummary_wrapper {
+    background-color: var(--purple);
+    padding: 10px;
+    font-size: 11px;
+}
+
+#groupSummary_wrapper th {
+    background-color: var(--light-purple) !important;
+    text-transform: uppercase;
+    border: none;
+}
+
+label {
+    text-align: right;
+    margin-left: 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+    color: var(--white);
+}
+
+input[type='search'] {
+    font-size: 11px;
+    font-weight: 400;
+    padding: 6px 10px;
+    width: 250px !important;
+    background-color: var(--white) !important;
+    margin-bottom: 10px !important;
+}
+
+select {
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: var(--white) !important;
+    border: none;
+    width: 60px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: var(--font-dark);
+    text-transform: uppercase;
+}
+
+td.footer {
+    background-color: var(--light-purple) !important;
+    text-transform: uppercase;
+    border: none;
+    color: var(--font-dark);
+    font-size: 12px;
+}
+
+#groupSummary_info {
+    color: var(--white);
+}
+
+#groupSummary_paginate {
+    background-color: white !important;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+.group-header {
+    font-size: 14px !important;
+    border: none;
+    color: var(--white) !important;
+    background-color: var(--purple) !important;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10px;
+}

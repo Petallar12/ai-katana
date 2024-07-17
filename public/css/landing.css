@@ -1,0 +1,151 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --white: #ffffff;
+    --snow: #fafafa;
+    --font-dark: #3b3b3b;
+    --purple: #5046e5;
+    --dark-purple: #392fc2;
+}
+
+/* Background */
+body {
+    /* background-image: url("/assets/images/lokeybgblur.jpg");
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    flex-direction: column;
+    color: black;
+    /* background-color: var(--snow) */
+    background: rgb(252, 252, 252);
+    background: linear-gradient(
+        150deg,
+        rgba(252, 252, 252, 1) 0%,
+        rgba(248, 243, 255, 1) 72%
+    );
+}
+
+.title-header {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.title-text {
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.container {
+    color: var(--font-dark);
+}
+
+.enterBtn {
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    height: 35px;
+    outline: none;
+    color: var(--white);
+    background-color: var(--purple);
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.03em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.enterBtn:hover {
+    background-color: var(--dark-purple);
+    color: var(--white);
+}
+
+.enterBtn:focus {
+    background-color: var(--dark-purple) !important;
+    color: var(--white);
+}
+
+.logo {
+    height: 24px;
+    width: auto;
+}
+
+.card-title {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.card-body {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.animate-card {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    transform: scale(0.5);
+    animation: zoomIn 1s ease-in-out forwards 1.2s;
+}
+
+.btn-outline-light {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 1.2s;
+}
+
+/* Keyframes for zoomIn animation */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

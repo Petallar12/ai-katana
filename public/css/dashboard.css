@@ -1,0 +1,146 @@
+.dashboard-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--font-dark);
+}
+
+.title-header {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.title-header-text {
+    font-size: 15px;
+}
+
+.total-clients-div {
+    display: inline-flex;
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 0 40px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.total-clients {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+/* Cards */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    color: var(--font-dark);
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: none !important;
+    border: none !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h5.card-title {
+    padding: 8px 0;
+    font-size: 12px !important;
+}
+
+.card-header {
+    background: var(--purple) !important;
+    color: white !important;
+}
+
+.card-body {
+    padding: 0 10px !important;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-body li {
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+strong {
+    font-size: 30px;
+}
+
+/* Graphs */
+
+.graph-card {
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+.graph-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: var(--purple);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+i.bx {
+    color: white;
+    display: flex;
+    align-content: center;
+}
+
+.graph-card-header h3 {
+    margin: 0;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.graph-card-footer {
+    padding: 0;
+}
+
+.graph-card-footer iframe {
+    width: 100%;
+    border: none;
+    overflow: auto;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    .graph-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .graph-card-header {
+        margin-top: 10px;
+    }
+}
